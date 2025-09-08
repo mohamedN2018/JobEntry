@@ -11,5 +11,5 @@ services:
       gunicorn --chdir /usr/src/app
                --access-logfile -
                --error-logfile -
-               --bind 0.0.0.0:8080
+               --bind 0.0.0.0:8000
                jobentry.wsgi:application
