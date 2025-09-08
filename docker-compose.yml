@@ -6,7 +6,7 @@ services:
     volumes:
       - ./:/usr/src/app
     ports:
-      - "8000:8080"  # 8080 على جهازك، 8000 داخل الـ container
+      - "8080:8080"  # 8080 على جهازك، 8080 داخل الـ container
     command: >
       gunicorn --chdir /usr/src/app
                --access-logfile -
