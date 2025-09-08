@@ -38,7 +38,7 @@ RUN python manage.py migrate
 RUN python manage.py collectstatic --noinput
 
 # expose port
-EXPOSE 8000
+EXPOSE 8080
 
 # start server with gunicorn
 CMD ["gunicorn", "--chdir", "/usr/src/app", "--access-logfile", "-", "--error-logfile", "-", "--bind", "0.0.0.0:8080", "jobentry.wsgi:application"]
