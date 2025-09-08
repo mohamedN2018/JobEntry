@@ -41,5 +41,5 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8000
 
 # start server with gunicorn
-CMD ["gunicorn", "--chdir", "/usr/src/app", "--access-logfile", "-", "--error-logfile", "-", "--bind", "0.0.0.0:8000", "jobentry.wsgi:application"]
+CMD ["gunicorn", "--chdir", "/usr/src/app", "--access-logfile", "-", "--error-logfile", "-", "--bind", "0.0.0.0:8080", "jobentry.wsgi:application"]
 # CMD ["gunicorn", "--chdir", "/usr/src/app", "--bind", "0.0.0.0:8000", "jobentry.wsgi:application"]

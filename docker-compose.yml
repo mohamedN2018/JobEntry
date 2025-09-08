@@ -6,10 +6,10 @@ services:
     volumes:
       - ./:/usr/src/app
     ports:
-      - "8080:8000"  # 8080 على جهازك، 8000 داخل الـ container
+      - "8000:8080"  # 8080 على جهازك، 8000 داخل الـ container
     command: >
       gunicorn --chdir /usr/src/app
                --access-logfile -
                --error-logfile -
-               --bind 0.0.0.0:8000
+               --bind 0.0.0.0:8080
                jobentry.wsgi:application
