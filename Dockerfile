@@ -26,7 +26,7 @@ RUN pip3 install pipenv
 COPY . .
 
 # After files copied
-RUN pipenv requirements > requirements.txt
+RUN pipenv lock --requirements > requirements.txt
 RUN pip3 install -r requirements.txt
 
 
