@@ -19,8 +19,8 @@ RUN apk update && apk add --no-cache \
 ENV TZ=Africa/Cairo
 
 # upgrade pip & install pipenv
-RUN pip3 install --upgrade pip
-RUN pip3 install pipenv
+RUN pip3 install --upgrade pip pipenv
+
 
 # Copy files first Pipfile and Pipfile.lock
 COPY . .
