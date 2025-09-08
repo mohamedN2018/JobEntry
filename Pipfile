@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 django = "*"
+django-jazzmin = "*"
+pillow = "*"
+pipreqs = "*"
 
 [dev-packages]
 
