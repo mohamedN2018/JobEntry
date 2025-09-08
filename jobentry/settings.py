@@ -26,6 +26,7 @@ CSRF_TRUSTED_ORIGINS = [
 # =========================
 INSTALLED_APPS = [
     'jazzmin',
+    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -34,6 +35,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Custom Apps
+
+    'job',
+    'home',
+    'contact',
 ]
 
 # =========================
@@ -166,9 +171,9 @@ EMAIL_PORT = 587  # خليه رقم مش نص
 # JAZZMIN CONFIG
 # =========================
 JAZZMIN_SETTINGS = {
-    "site_title": "Vera Admin",
-    "site_header": "Vera",
-    "site_brand": "Vera",
+    "site_title": "jobentry Admin",
+    "site_header": "jobentry",
+    "site_brand": "jobentry",
     "site_logo": "/assets/img/logo.jpg",
     "login_logo": "/assets/img/logo.jpg",
     "login_logo_dark": "/assets/img/logo.jpg",
